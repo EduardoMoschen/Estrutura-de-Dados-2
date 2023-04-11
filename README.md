@@ -1,21 +1,20 @@
-# Estrutura de Dados 2 - UFES
+# Estrutura de Dados 2
 
-<h3>
-Códigos feitos durante a disciplina de Estrutura de Dados 2 - UFES.
-</h3>
+## Códigos feitos durante a disciplina de Estrutura de Dados 2 - UFES.
 
-<h2> Compilando e Executando os Algoritmos </h2>
+
+**<h4> Compilando e Executando os Algoritmos </h4>**
 A execução dos códigos consiste em compilar e executar o objeto gerado. Para isso, há duas maneiras: <br /> <br />
-Para compilar: <br /> <br />
-<code>
-gcc bubbleSort.c -o nome_executável 
-</code>
 
-<br /> 
+**Para compilar:**<br/><br/>
+Usando gcc: <code>gcc bubbleSort.c -o nome_executável</code>
 
-Ou <br /> <br />
-<code> g++ -o nome_executável bubbleSort.c</code>
+<br/>
+
+Ou <br/><br/>
+Usando g++: <code>g++ -o nome_executável bubbleSort.c</code>
 
 <br />
-Para executar:
+
+**Para executar:**
 <code>./nome_executável</code>
