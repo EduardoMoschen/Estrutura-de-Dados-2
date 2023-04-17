@@ -41,15 +41,24 @@ int main(){
 }
 
 void quickSort(int array[], int startIndex, int endIndex){
+    // Verifica se tem ao menos dois elementos.
     if(startIndex < endIndex){
-        int pivot = (startIndex + endIndex) / 2;
-
+        int pivot = (startIndex + endIndex) / 2; // Escolha do pivô.
+        
+        // Indica a partição atual.
         int partitionIndex = partition(array, startIndex, endIndex);
         
+        // Verifica se o pivô é o maior elemento.
         if(pivot == endIndex){
+            // Ordena os elementos antes do particionamento.
             quickSort(array, startIndex, partitionIndex - 1);
+
+        // Verifica se o pivô é o menor elemento.
         }else if(pivot == startIndex){
+            // Ordena os elementos antes do particionamento.
             quickSort(array, partitionIndex + 1, endIndex);
+
+        // Caso contrário, ordena os elementos antes e depois do particionamento.
         }else{
             quickSort(array, startIndex, partitionIndex - 1);
             quickSort(array, partitionIndex + 1, endIndex);
