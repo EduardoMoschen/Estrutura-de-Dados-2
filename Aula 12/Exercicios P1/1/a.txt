@@ -1,0 +1,2 @@
+Um algoritmo é considerado instável quando não preserva a ordem de entrada
+do vetor a ser ordenado.

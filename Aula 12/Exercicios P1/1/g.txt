@@ -1,0 +1,16 @@
+É estável, porque havendo dois elementos iguais e aparecem antes do outro na 
+entrada original, irá aparecer a mesma ordem na saída ordenada.
+
+Por exemplo, considere a entrada:
+    [3A, 2B, 3C, 1D, 2E]
+
+Acontecerá a divisão:
+    [3A, 2B, 3C] [1D, 2E]
+
+Continuando a divisão de forma recursiva:
+    [3A] [2B] [3C] [1D] [2E]
+
+Agora combinando e ordenando os elementos:
+    [1D, 2B, 2E, 3A, 3C]
+
+Logo, chegamos a conclusão que é estável, já que a ordem da entrada é a mesma.
