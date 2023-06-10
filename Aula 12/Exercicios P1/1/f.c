@@ -1,6 +1,5 @@
-
 /*
-IMplemente o algoritmo do Merge Sort visto em aula.
+Implemente o algoritmo do Merge Sort visto em aula.
 */
 
 #include <stdio.h>
