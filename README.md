@@ -22,7 +22,7 @@ Usando g++: <code>g++ -o nome_executável bubbleSort.c</code>
 <br />
 Em algumas pastas foi necessário o uso do Makefile. Segue as instruções:
 
-<br />
+<br /><br />
 
 **Para compilar:**
 <code>make all</code>
