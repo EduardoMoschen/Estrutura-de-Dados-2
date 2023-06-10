@@ -1,0 +1,22 @@
+1 - Enumere os casos de desbalanceamento que podem surgir
+quando se exclui uma chave em uma árvore AVL:
+
+Após a exclusão, podem surgir diferentes casos de desbalanceamento. Dentre eles, há quatro possibilidades:
+
+    1 - desbalanceamento à esquerda: após a exclusão de uma chave em uma subárvore à esquerda,
+    a altura dessa subárvore pode diminuir, resultando em um desbalanceamento. Isso pode ocorrer
+    quando o fator de balanceamento se torma maior do que 1;
+
+    2 - desbalanceamento à direita: da mesma forma que o item acima, a exclusão de uma chave em uma
+    subárvore à direita pode diminuir a atura dessa subárvore, levando a um desbalanceamento quando o
+    fator de balanceamento se torna menor do que -1;
+
+    3 - desbalanceamento duplo à esquerda: ocorre quando a exclusão de uma chave em uma subárvore à esquerda
+    causa um desbalanceamento à direita em seu ancestral. Isso pode acontecer quando o fator de balanceamento
+    da subárvore à esquerda do nó desbalanceado é igual a -1;
+
+    4 - desbalanceamento duplo à direita: da mesma forma que o item acima, a exclusão de uma chave em uma
+    subárvore à direita pode resultar em uma desbalanceamento à esquerda em seu ancestral. Isso ocorre quando
+    o fator de balanceamento da subárvore à direita do nó desbalanceado é igual a 1.
+
+Fator de balanceamento => diferença entre as alturas das subárvores esquerdae direita.
