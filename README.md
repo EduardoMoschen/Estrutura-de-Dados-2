@@ -18,3 +18,14 @@ Usando g++: <code>g++ -o nome_executável bubbleSort.c</code>
 
 **Para executar:**
 <code>./nome_executável</code>
+
+<br />
+Em algumas pastas foi necessário o uso do Makefile. Segue as instruções:
+
+<br />
+
+**Para compilar:**
+<code>make all</code>
+
+**Para executar:**
+<code>./nome_executável</code>
