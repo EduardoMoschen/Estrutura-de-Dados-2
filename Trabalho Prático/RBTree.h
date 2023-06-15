@@ -26,6 +26,8 @@ NoRBTree *criaNo(int id, char *produto, int quantidade);
 */
 NoRBTree *rotacaoEsquerda(NoRBTree *noTree);
 
+NoRBTree *rotacaoDireita(NoRBTree *noTree);
+
 int identificaCor(NoRBTree  *noTree);
 
 /*

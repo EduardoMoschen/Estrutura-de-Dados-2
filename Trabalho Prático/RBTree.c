@@ -24,10 +24,22 @@ NoRBTree *criaNo(int id, char *produto, int quantidade){
 
 NoRBTree *rotacaoEsquerda(NoRBTree *noTree){
     NoRBTree *novaRaiz = noTree -> direita;
-    noTree -> direita = novaRaiz -> esquerda;
+    NoRBTree *subArvoreEsquerda = novaRaiz -> esquerda;
+    
     novaRaiz -> esquerda = noTree;
+    noTree -> direita = subArvoreEsquerda;
 
-    return noTree;
+    return novaRaiz;
+}
+
+NoRBTree *rotacaoDireita(NoRBTree *noTree){
+    NoRBTree *novaRaiz = noTree -> esquerda;
+    NoRBTree *subArvoreDireita = novaRaiz -> direita;
+
+    novaRaiz -> direita = noTree;
+    noTree -> esquerda = subArvoreDireita;
+
+    return novaRaiz;
 }
 
 int identificaCor(NoRBTree *noTree){
@@ -46,12 +58,15 @@ void trocaCor(NoRBTree *no1, NoRBTree *no2){
 NoRBTree *insereNo(NoRBTree *Tree, int id, char *produto, int quantidade){
     NoRBTree *novoNo = criaNo(id, produto, quantidade);
     
+    // Caso a árvore esteja vazia, será inserido o primeiro nó e será da cor preta.
     if(Tree == NULL){
         Tree = novoNo;
-        novoNo -> cor = BLACK;
+        // novoNo -> cor = BLACK;
     }else{
+        // Com a raiz preenchida, é feita a verificação pelo tamanho do ID do produto. Caso seja menor que o ID, será inserido à esquerda.
         if(id < Tree -> id)
             Tree -> esquerda = insereNo(Tree -> esquerda, id, produto, quantidade);
+        //
         else if(id > Tree -> id)
             Tree -> direita = insereNo(Tree -> direita, id, produto, quantidade);
         else if(id == Tree -> id){
