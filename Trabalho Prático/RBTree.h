@@ -5,43 +5,51 @@
 #define BLACK 0
 #define RED 1
 
-typedef struct noRBTree {
+typedef struct NoRBTree {
     int id;
     char nomeProduto[100];
     int quantidadeProdutoEstoque;
     int cor;
-    struct noRBTree *direita;
-    struct noRBTree *esquerda;
-}NoRBTree;
+    struct NoRBTree *direita;
+    struct NoRBTree *esquerda;
+} NoRBTree;
 
 /*
-Função que recebe como parâmetros o ID do produto, nome do produto e sua quantidade. Após
+Função que recebe como parâmetros o ID do produto, NoRBTreeme do produto e sua quantidade. Após
 receber esses parâmetros, é feita a alocação de memória do nó que será armazenado na
-árvore. Por fim, é armazenado os dados no nó e retornado o nó criado.
+árvore. Por fim, é armazenado os dados NoRBTree nó e retornado o nó criado.
 */
-NoRBTree *criaNo(int id, char *produto, int quantidade);
+NoRBTree *criaNoRBTree(int id, char *produto, int quantidade);
 
 /*
 
 */
-NoRBTree *rotacaoEsquerda(NoRBTree *noTree);
-
-NoRBTree *rotacaoDireita(NoRBTree *noTree);
-
-int identificaCor(NoRBTree  *noTree);
+NoRBTree *rotacaoEsquerda(NoRBTree *NoRBTreeTree);
 
 /*
-Função que recebe dois nós do tipo NoRBTree como parâmetros e faz a troca de cores
+
+*/
+NoRBTree *rotacaoDireita(NoRBTree *NoRBTreeTree);
+
+/*
+
+*/
+int identificaCor(NoRBTree *NoRBTreeTree);
+
+/*
+Função que recebe dois nós do tipo NoRBTreeRBTree como parâmetros e faz a troca de cores
 através da troca de ponteiros.
 */
-void trocaCor(NoRBTree *no1, NoRBTree *no2);
+void trocaCor(NoRBTree *NoRBTree1, NoRBTree *NoRBTree2);
+
+int verificaQuantidadeNosPretos(NoRBTree *raiz);
 
 /*
 
 */
-NoRBTree *insereNo(NoRBTree *Tree, int id, char *produto, int quantidade);
+NoRBTree *insere(NoRBTree *Tree, int id, char *produto, int quantidade);
 
 /*
 
 */
-void imprime(NoRBTree *no, int espaco);
+void imprime(NoRBTree *NoRBTree, int espaco);

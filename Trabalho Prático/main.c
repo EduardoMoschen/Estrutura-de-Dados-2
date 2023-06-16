@@ -1,21 +1,19 @@
 #include "RBTree.h"
 
 int main(){
-    NoRBTree *RB = NULL;
+    NoRBTree *RBTree = NULL;
 
-    // imprime(RB, 0);
-
-    RB = insereNo(RB, 8, "Mala", 7);
-    RB = insereNo(RB, 5, "Notebook", 7);
-    RB = insereNo(RB, 10, "Cama", 7);
-    RB = insereNo(RB, 12, "Sofa", 7);
-    RB = insereNo(RB, 16, "Sofa", 7);
-    RB = insereNo(RB, 16, "Sofa", 7);
-
+    RBTree = insere(RBTree, 7, "Cadeira", 2);
+    RBTree = insere(RBTree, 2, "Mesa", 3);
+    RBTree = insere(RBTree, 3, "Mala", 7);
+    // RBTree = insere(RBTree, 12, "Mesa", 3);
+    // RBTree = insere(RBTree, 15, "Mesa", 3);
+    // RBTree = insere(RBTree, 18, "Mesa", 3);
+    // RBTree = insere(RBTree, 21, "Mesa", 3);
     
-    imprime(RB, 0);
+    imprime(RBTree, 0);
 
-    free(RB);
+    free(RBTree);
 
     return 0;
 }
